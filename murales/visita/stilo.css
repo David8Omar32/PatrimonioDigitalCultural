@@ -1,0 +1,35 @@
+.swiper{
+    width: 40%;
+    height: 40%;
+    padding: 10px 0px 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.swiper-slide{
+    width: 60%;
+    height: 60%;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.334);
+    padding: 40px;
+    text-align: center;
+}    
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-content{
+    display:block;
+}
+
+.product-img{
+    flex-basis: 40%;
+    text-align: center;
+}
+
+.product-img img{
+    width: 40%;
+}
