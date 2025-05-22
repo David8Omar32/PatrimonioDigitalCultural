@@ -22,7 +22,7 @@
     position: absolute;
     visibility: hidden;
     z-index: 2;
-    overflow:inherit;
+    
 }
 
 
@@ -210,7 +210,7 @@ body{
     color: #000;
     line-height: 1.5;
     text-align: justify;
-    font-size: 18;
+    font-size: 24;
 }
 
 .special-layer{
@@ -222,11 +222,21 @@ body{
     left: 0;
     transition: 0.5s;
 }
-.layer h3{
-    font-family: Arial, Helvetica, sans-serif;
+.special-layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    font-family:'Times New Roman', Times, serif;
 }
 .special-layer:hover{
-    background: rgba(12, 252, 32, 0.7);
+    background: rgba(22, 121, 130, 0.7);
 }
 
 .special-layer h3{
