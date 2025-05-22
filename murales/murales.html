@@ -34,7 +34,7 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <div class="contenido" onmouseenter="showMenu()" onmouseleave="hideMenu()">
+        <div class="contenido" onmouseenter="menu1()" onmouseleave="menu2()">
             <div class="mapa-interactivo">
                 <div style="width: 100%;">
                     <div style="position: relative; padding-bottom: 50%; padding-top: 0; height: 0;">
@@ -365,8 +365,8 @@
         <div class="row">
             <div class="campus-col-special">
                 <img src="../imagenes/mural8.jpeg">
-                <div class="special-layer">
-                    <a href="../informacion/datos.html"><h3>“EL VUELO DEL CONOCIMEINTO”</h3></a>
+                <div class="layer">
+                    <a href="../informacion/datos.html"><h3>“EL VUELO DEL CONOCIMIENTO”</h3></a>
                 </div>
             </div>
         </div>    
@@ -497,7 +497,7 @@
 
     <script>
         var navBuho = document.getElementById("mostrarBuho");
-        function showMenu(){
+        function menu1(){
             navBuho.style.bottom = "1%";{
                 navBuho.style.transition = "1s";
             };
@@ -505,7 +505,7 @@
             navBuho.style.right = "-100px";
             navBuho.style.display = "block";
         }
-        function hideMenu(){
+        function menu2(){
             navBuho.style.visibility = "hidden";
             navBuho.style.transition = "3s";
             navBuho.style.bottom = "-500px";
