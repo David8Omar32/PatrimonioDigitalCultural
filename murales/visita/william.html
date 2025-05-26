@@ -20,7 +20,7 @@
     <section class="header-datos">
         <nav>
             <a href="../../index.html"><img  src="https://uach.mx/assets/media/publications/2022/5/3671_/escudo-UACH-hor-compact.svg"></a>
-            <div class="links-navegacion" id="navegacionLinks">
+            <div class="links-navegacion" id="navegacionLinks" style="visibility: visible; display: none; right: -200px;">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="../../index.html">HOME</a></li>
@@ -122,9 +122,14 @@ Villanueva ha creado algo más que una escultura: ha dado forma a una constelaci
         var navLink = document.getElementById("navegacionLinks");
         function showMenu(){
             navLink.style.right = "0";
+            navLink.style.display = "block";
+            navlink.style.visibility = "visible";
+            
         }
         function hideMenu(){
             navLink.style.right = "-200px";
+            navLink.style.display = "none";
+            navlink.style.visibility = "hidden";
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
