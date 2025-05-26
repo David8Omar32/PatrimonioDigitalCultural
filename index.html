@@ -18,7 +18,7 @@
     <section class="header">
         <nav>
             <a href="index.html"><img  src="https://uach.mx/assets/media/publications/2022/5/3671_/escudo-UACH-hor-compact.svg"></a>
-            <div class="links-navegacion" id="navegacionLinks">
+            <div class="links-navegacion" id="navegacionLinks" style="visibility: visible; display: none; right: -200px;">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
@@ -129,11 +129,17 @@
 
     <script>
         var navLink = document.getElementById("navegacionLinks");
+        var links_navegacion = document.getElementsByClassName("links-navegacion");
         function showMenu(){
             navLink.style.right = "0";
+            navLink.style.display = "block";
+            navlink.style.visibility = "visible";
+            
         }
         function hideMenu(){
             navLink.style.right = "-200px";
+            navLink.style.display = "none";
+            navlink.style.visibility = "hidden";
         }
     </script>
 </body>
