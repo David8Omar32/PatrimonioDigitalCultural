@@ -21,7 +21,7 @@
     <section class="header-datos">
         <nav>
             <a href="../../index.html"><img  src="https://uach.mx/assets/media/publications/2022/5/3671_/escudo-UACH-hor-compact.svg"></a>
-            <div class="links-navegacion" id="navegacionLinks">
+            <div class="links-navegacion" id="navegacionLinks" style="visibility: visible; display: none; right: -200px;">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="../../index.html">HOME</a></li>
@@ -78,19 +78,20 @@
                 </div>
 
                 <p>
-                    Esta escultura no es un simple objeto metálico instalado en el Corredor Escultórico. Es, más bien, una resonancia material de uno de los pensamientos más liberadores del siglo XX: el de Paulo Freire. Y lo que logra Guillermo Villanueva al rendirle homenaje con acero de descarte, ensamblado con sensibilidad y rigor, es algo más que una representación. Es una traducción visual de la pedagogía como acto de emancipación.
+                    Esta escultura no es un simple objeto metálico instalado en el Corredor Escultórico. Es, más bien, una resonancia material de uno de los pensamientos más liberadores del siglo XX: el de Paulo Freire. Y lo que logra Guillermo Villanueva al rendirle homenaje con acero de descarte, ensamblado con sensibilidad y rigor, es algo más que una representación: es una traducción visual de la pedagogía como acto de emancipación.
+
 <br> <br>
 Freire —figura clave del pensamiento educativo latinoamericano— no concibió la enseñanza como una transferencia unidireccional de contenidos, sino como un acto de comunión. Su crítica a la “educación bancaria” y su propuesta de una pedagogía crítica y dialógica le otorgaron un lugar central en los estudios de filosofía, educación y letras. Pero ¿cómo se plasma eso en una escultura? ¿Cómo se sugiere el despertar de una conciencia?
 <br> <br>
-Villanueva responde sin didactismos. La escultura mantiene la ya reconocible estructura piramidal, que, como bien ha señalado la Maestra Zoraya Valdiviezo, le otorga solidez y visibilidad desde cualquier ángulo. Pero aquí esa forma no es solo compositiva: es simbólica. El rostro, elevado, proyecta una dirección vertical que alude al ascenso del pensamiento. A la transformación interior que, en la pedagogía freireana, no es solo posible, sino necesaria.
+Villanueva responde sin didactismos. La escultura mantiene la ya reconocible estructura piramidal, que, como bien ha señalado la Maestra Zoraya Valdiviezo, "le otorga solidez y visibilidad desde cualquier ángulo. Pero aquí esa forma no es solo compositiva: es simbólica. El rostro, elevado, proyecta una dirección vertical que alude al ascenso del pensamiento. A la transformación interior que, en la pedagogía freireana, no es solo posible, sino necesaria."  (Lic. Zoraya Xochitl Valdiviezo Cardoza, Entrevista personal, 2 de abril del 2025).
 <br> <br>
-El acero oxidado no se limita a una estética del abandono: en este contexto, es metáfora de lo rescatado. De lo que fue descartado por la industria, pero encuentra una nueva forma y una nueva voz. Freire hacía precisamente eso: recogía saberes negados, voces periféricas, experiencias silenciadas, y las convertía en núcleos de una pedagogía revolucionaria. Cada fragmento de metal en esta obra podría ser una historia. Y el conjunto, una comunidad que se eleva en la dignidad de su ensamblaje.
+El acero oxidado no se limita a una estética del abandono: en este contexto, es metáfora de lo rescatado, de lo que fue descartado por la industria pero encuentra una nueva forma y una nueva voz. Freire hacía precisamente eso: recogía saberes negados, voces periféricas, experiencias silenciadas, y las convertía en núcleos de una pedagogía revolucionaria. Cada fragmento de metal en esta obra podría ser una historia; y el conjunto, una comunidad que se eleva en la dignidad de su ensamblaje.
 <br> <br>
-El rostro no es realista. No hay aquí un retrato convencional. Es una sugerencia de presencia, una evocación de pensamiento. La escultura no impone una imagen cerrada de Freire, sino que lo insinúa como posibilidad viva. Como una conciencia que sigue interrogándonos, que aún hoy —sobre todo hoy— nos convoca a repensar el mundo.
+El rostro no es realista. No hay aquí un retrato convencional. Es una sugerencia de presencia, una evocación de pensamiento. La escultura no impone una imagen cerrada de Freire, sino que lo insinúa como posibilidad viva, como una conciencia que sigue interrogándonos, que aún hoy —sobre todo hoy— nos convoca a repensar el mundo.
 <br> <br>
 Hay en el gesto metálico una tensión ambigua: fuerza sin agresión, intención sin dogma. Como si la obra, igual que su referente, no buscara imponerse, sino dialogar. Porque, al final, eso es lo que hacía Freire: invitar a leer el mundo con ojos críticos, a comprender que cada sujeto tiene una voz, y que la educación es el espacio donde esa voz se encuentra con otras.
 <br> <br>
-En su volumen ensamblado, en sus uniones imperfectas, hay también una ética: la de construir con lo que se tiene, de dignificar lo que ha sido excluido. Uno podría ver en cada remache una comunidad. En cada intersección, una relación de reciprocidad. Y en el todo, una pedagogía encarnada.
+En su volumen ensamblado, en sus uniones imperfectas, hay también una ética: la de construir con lo que se tiene, de dignificar lo que ha sido excluido. Uno podría ver en cada remache una comunidad, en cada intersección, una relación de reciprocidad, y en el todo, una pedagogía encarnada.
 <br> <br>
 No se trata de una escultura estática. Es un pensamiento hecho cuerpo. Un recordatorio de que la educación verdadera no adormece: transforma.
                 </p>
@@ -122,9 +123,14 @@ No se trata de una escultura estática. Es un pensamiento hecho cuerpo. Un recor
         var navLink = document.getElementById("navegacionLinks");
         function showMenu(){
             navLink.style.right = "0";
+            navLink.style.display = "block";
+            navlink.style.visibility = "visible";
+            
         }
         function hideMenu(){
             navLink.style.right = "-200px";
+            navLink.style.display = "none";
+            navlink.style.visibility = "hidden";
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
