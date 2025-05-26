@@ -21,7 +21,7 @@
     <section class="header-datos">
         <nav>
             <a href="../index.html"><img  src="https://uach.mx/assets/media/publications/2022/5/3671_/escudo-UACH-hor-compact.svg"></a>
-            <div class="links-navegacion" id="navegacionLinks">
+            <div class="links-navegacion" id="navegacionLinks" style="visibility: visible; display: none; right: -200px;">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="../../index.html">HOME</a></li>
@@ -70,13 +70,13 @@
                 </div>
 
                 <p>
-                    Los murales tienen una cualidad única: no concentran un solo mensaje, sino que despliegan un tapiz de significados que se tensan, se superponen y se contradicen. En este primer mural del recorrido, "Conocer el Derecho, Servir a la Justicia", Alberto Carlos logra construir un discurso visual plural, donde cada zona del color encierra un dilema, una advertencia, una esperanza.
+                    Los murales tienen una cualidad única: no concentran un solo mensaje, sino que despliegan un tapiz de significados que se tensan, se superponen y se contradicen. En este primer mural del recorrido, Conocer el Derecho, Servir a la Justicia, Alberto Carlos logra construir un discurso visual plural, donde cada zona del color encierra un dilema, una advertencia, una esperanza.
 <br> <br>
-A primera vista, el título sugiere una ecuación sencilla: conocer el derecho como medio para alcanzar la justicia. Pero el mural no celebra ingenuamente esa relación. Más bien la somete a juicio. Lo que se despliega ante nuestros ojos no es una ilustración del derecho, sino una alegoría crítica de su historia, sus promesas y sus desvíos.
+A primera vista, el título sugiere una ecuación sencilla: conocer el derecho como medio para alcanzar la justicia. Pero el mural no celebra ingenuamente esa relación. Más bien, la somete a juicio. Lo que se despliega ante nuestros ojos no es una ilustración del derecho, sino una alegoría crítica de su historia, sus promesas y sus desvíos.
                 </p>
                 <h4>La Justicia como visión, no como dogma</h4>
                 <p>
-                    En el lado superior derecho, la justicia aparece como una figura femenina luminosa, con los brazos abiertos. No es la diosa con los ojos vendados ni con la balanza en mano. No hay rigidez ni severidad, sino apertura. Como señala la maestra Zoraya Valdiviezo, esta mujer da la bienvenida, no impone. El blanco que la rodea no es un ornamento, sino una declaración: la justicia es luz porque permite ver, no porque se oculte tras la neutralidad. Es una justicia ética, hospitalaria, vinculada al pensamiento más que a la norma. Esta zona del mural es clara, casi serena, pero no ingenua: está llena de tensión contenida, como una promesa aún por cumplir.
+                    En el lado superior derecho, la justicia aparece como una figura femenina luminosa, con los brazos abiertos. No es la diosa con los ojos vendados ni con la balanza en mano. No hay rigidez ni severidad, sino apertura. Como señala la maestra Zoraya Valdiviezo, "Esta mujer da la bienvenida, no impone. El blanco que la rodea no es un ornamento, sino una declaración: la justicia es luz porque permite ver, no porque se oculte tras la neutralidad. Es una justicia ética, hospitalaria, vinculada al pensamiento más que a la norma. Esta zona del mural es clara, casi serena, pero no ingenua: está llena de tensión contenida, como una promesa aún por cumplir." (Lic. Zoraya Xochitl Valdiviezo Cardoza, Entrevista personal, 2 de abril del 2025).
                 </p>
                 <h4>La sombra y la distorsión: crítica del sistema</h4>
                 <p>
@@ -88,7 +88,7 @@ Y, sin embargo, el mural no cae en simplismos. Introduce incluso al comunismo, n
                 <p>
                     Este no es un mural contemplativo. No busca agradar. Nos sitúa entre tensiones: entre el derecho institucionalizado y la justicia ética, entre el progreso y la deshumanización, entre la esperanza y el desencanto. Es un mural dramático, casi teatral, dividido en tres actos: la lucha, la crítica y la visión.
 <br> <br>
-Al centro, como zona de transición, se acumulan los símbolos del malestar moderno. Todo en la composición es dinámico, como bien apunta la maestra Valdiviezo: los colores cálidos del rosa y el blanco compiten con los tonos sombríos del azul, marrón y negro. La luz y la sombra no son meros contrastes visuales, sino campos de batalla simbólicos.
+Al centro, como zona de transición, se acumulan los símbolos del malestar moderno. Todo en la composición es dinámico, como bien apunta la maestra Valdiviezo: "los colores cálidos del rosa y el blanco compiten con los tonos sombríos del azul, marrón y negro. La luz y la sombra no son meros contrastes visuales, sino campos de batalla simbólicos." (Lic. Zoraya Xochitl Valdiviezo Cardoza, Entrevista personal, 2 de abril del 2025).
                 </p>
                 <h4>Conclusión: una obra que nos transforma</h4>
                 <p>
@@ -122,9 +122,14 @@ Al centro, como zona de transición, se acumulan los símbolos del malestar mode
         var navLink = document.getElementById("navegacionLinks");
         function showMenu(){
             navLink.style.right = "0";
+            navLink.style.display = "block";
+            navlink.style.visibility = "visible";
+            
         }
         function hideMenu(){
             navLink.style.right = "-200px";
+            navLink.style.display = "none";
+            navlink.style.visibility = "hidden";
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
