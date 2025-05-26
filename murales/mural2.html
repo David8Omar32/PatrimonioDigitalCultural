@@ -21,7 +21,7 @@
     <section class="header-datos">
         <nav>
             <a href="../index.html"><img  src="https://uach.mx/assets/media/publications/2022/5/3671_/escudo-UACH-hor-compact.svg"></a>
-            <div class="links-navegacion" id="navegacionLinks">
+            <div class="links-navegacion" id="navegacionLinks" style="visibility: visible; display: none; right: -200px;">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="../../index.html">HOME</a></li>
@@ -43,21 +43,22 @@
                 Ubicación: Pasillo derecho de entrada, Facultad de Filosofía y Letras</h5>
                 <img src="../imagenes/mural2.jpeg" alt="">
                 <p>
-                    Como si se tratara del último movimiento de una sinfonía cuidadosamente orquestada, “El hombre lobo del hombre” no es sólo la obra que culmina nuestro trayecto visual, sino la pieza que condensa, en su núcleo tenso y silencioso, la totalidad de las preguntas que hemos ido cultivando a lo largo del recorrido. Y es desde ese silencio cargado que esta obra grita.
+                    Como si se tratara del último movimiento de una sinfonía cuidadosamente orquestada, El hombre lobo del hombre no es solo la obra que culmina nuestro trayecto visual, sino la pieza que condensa, en su núcleo tenso y silencioso, la totalidad de las preguntas que hemos ido cultivando a lo largo del recorrido. Y es desde ese silencio cargado que esta obra grita.
+
 <br> <br> 
-Desde su propio título —una reformulación visual del célebre aforismo de Hobbes— Aarón Piña Mora nos coloca frente al abismo. Ya no se trata del poder o del derecho, ni siquiera del juicio histórico: aquí, el conflicto se vuelve radicalmente íntimo. No hay un enemigo afuera. El enemigo, esta vez, somos nosotros.
+Desde su propio título —una reformulación visual del célebre aforismo de Hobbes—, Aarón Piña Mora nos coloca frente al abismo. Ya no se trata del poder o del derecho, ni siquiera del juicio histórico: aquí, el conflicto se vuelve radicalmente íntimo. No hay un enemigo afuera. El enemigo, esta vez, somos nosotros.
+
                 </p>
                 <h4>La paleta neutra: una atmósfera moral</h4>
                 <p>
-                    Como destaca la maestra Zoraya Valdiviezo, la obra se construye con una colorimetría neutra: grises, tierras, tonos apagados que no buscan dramatismo fácil, sino profundidad reflexiva. No hay blancos ni negros: hay zonas intermedias, una geografía de la contradicción humana. Porque lo que aquí se representa no es una lucha entre el bien y el mal, sino entre las pulsiones que nos habitan, a veces simultáneamente.
-<br> <br>
-Este mural no acusa: revela. Y en esa revelación incómoda nos muestra que el hombre puede ser su propia prisión. La neutralidad no es estética: es ética. Nos habla de la dificultad de discernir, de actuar, de redimirse. Aquí no hay héroes, solo humanos.
+                    Como destaca la maestra Zoraya Valdiviezo, "la obra se construye con una colorimetría neutra: grises, tierras, tonos apagados que no buscan dramatismo fácil, sino profundidad reflexiva. No hay blancos ni negros: hay zonas intermedias, una geografía de la contradicción humana. Porque lo que aquí se representa no es una lucha entre el bien y el mal, sino entre las pulsiones que nos habitan, a veces simultáneamente... <br> <br>Este mural no acusa: revela. Y en esa revelación incómoda nos muestra que el hombre puede ser su propia prisión. La neutralidad no es estética: es ética. Nos habla de la dificultad de discernir, de actuar, de redimirse. Aquí no hay héroes, solo humanos." (Lic. Zoraya Xochitl Valdiviezo Cardoza, Entrevista personal, 2 de abril del 2025).
+
                 </p>
                 <h4>La simetría como campo de batalla</h4>
                 <p>
                     La composición, perfectamente equilibrada, no transmite calma. Al contrario: lo que se sostiene en equilibrio es una tensión devastadora. Cada figura tiene su peso, su reflejo. Es una danza entre opuestos donde ninguno prevalece, como si el mural nos dijera que la lucha interior nunca concluye. Lo que parece armonía visual es, en verdad, una pugna detenida en el instante del máximo esfuerzo.
 <br> <br>
-Y sin embargo, una figura se eleva. En la cima del mural, se alza una mujer con los brazos abiertos: la Liberación. No es redentora, no es divina. Es humana, profundamente humana. Su gesto no impone: propone. Es la posibilidad de trascender. Pero, como bien lo indica Valdiviezo, esta liberación no es física ni social: es filosófica, es el intento de soltarnos de aquello que nos retiene dentro.
+Y sin embargo, una figura se eleva. En la cima del mural, se alza una mujer con los brazos abiertos: la Liberación. No es redentora, no es divina. Es humana, profundamente humana. Su gesto no impone: propone. Es la posibilidad de trascender. Pero, como bien lo indica Valdiviezo, "esta liberación no es física ni social: es filosófica, es el intento de soltarnos de aquello que nos retiene dentro." (Lic. Zoraya Xochitl Valdiviezo Cardoza, Entrevista personal, 2 de abril del 2025).
                 </p>
                 <h4>Una conclusión que también es pregunta</h4>
                 <p>
@@ -65,7 +66,7 @@ Y sin embargo, una figura se eleva. En la cima del mural, se alza una mujer con 
 <br> <br>
 ¿Seremos capaces de liberarnos de nosotros mismos?
 <br> <br>
-No hay respuesta. Porque no se trata de resolver, sino de continuar preguntando. En eso reside la fuerza de esta obra: en su capacidad de cerrar un ciclo y, al mismo tiempo, de abrir uno nuevo —no en el espacio, sino en el interior del espectador.
+No hay respuesta. Porque no se trata de resolver, sino de continuar preguntando. En eso reside la fuerza de esta obra: en su capacidad de cerrar un ciclo y, al mismo tiempo, de abrir uno nuevo ,no en el espacio, sino en el interior del espectador.
                 </p>
         </article>
     </div>
@@ -95,9 +96,14 @@ No hay respuesta. Porque no se trata de resolver, sino de continuar preguntando.
         var navLink = document.getElementById("navegacionLinks");
         function showMenu(){
             navLink.style.right = "0";
+            navLink.style.display = "block";
+            navlink.style.visibility = "visible";
+            
         }
         function hideMenu(){
             navLink.style.right = "-200px";
+            navLink.style.display = "none";
+            navlink.style.visibility = "hidden";
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
